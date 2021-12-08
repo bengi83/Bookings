@@ -3,7 +3,4 @@ using Bookings.Shared.Abstractions.Domain;
 
 namespace Bookings.Domain.Entities;
 
-public class Room : AggregateRoot<RoomId>
-{
-  
-}
+public record BookingWindowUpdated(Booking Booking) : IDomainEvent;
